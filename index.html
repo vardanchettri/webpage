@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cinematic Photo Gallery</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="title">
+            <h1>My Cinematic Photo Gallery</h1>
+            <p>Organized by Dates</p>
+        </div>
+    </header>
+
+    <!-- Date Segmentation Section -->
+    <div class="date-segmentation">
+        <ul id="dates">
+            <li><button class="date" onclick="openGallery('2024-01-01')">2024-01-01</button></li>
+            <li><button class="date" onclick="openGallery('2024-05-15')">2024-05-15</button></li>
+            <li><button class="date" onclick="openGallery('2024-12-25')">2024-12-25</button></li>
+            <!-- More dates can be added here -->
+        </ul>
+    </div>
+
+    <!-- Gallery Section -->
+    <div id="gallery" class="gallery">
+        <div class="gallery-header">
+            <h2 id="galleryTitle">Gallery for 2024-01-01</h2>
+            <input type="file" id="fileInput" accept="image/*" multiple>
+        </div>
+        <div id="imageContainer" class="image-container">
+            <!-- Images will be displayed here dynamically -->
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 Cinematic Photo Gallery. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
