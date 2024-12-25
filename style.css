@@ -1,0 +1,104 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body and General Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #121212;
+    color: #fff;
+    overflow-x: hidden;
+}
+
+header {
+    text-align: center;
+    padding: 60px 0;
+    background-color: #333;
+}
+
+.title h1 {
+    font-size: 3rem;
+    letter-spacing: 2px;
+}
+
+.title p {
+    font-size: 1.2rem;
+    margin-top: 10px;
+}
+
+/* Date Segmentation */
+.date-segmentation {
+    margin-top: 50px;
+    text-align: center;
+}
+
+#dates {
+    list-style-type: none;
+}
+
+.date {
+    background-color: #333;
+    color: #fff;
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    border: none;
+    margin: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.date:hover {
+    background-color: #4CAF50;
+}
+
+/* Gallery Section */
+.gallery {
+    display: none;
+    padding: 20px;
+}
+
+.gallery-header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.gallery-header input[type="file"] {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.gallery-header input[type="file"]:hover {
+    background-color: #45a049;
+}
+
+.image-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 15px;
+    padding-top: 20px;
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.image-container img:hover {
+    transform: scale(1.05);
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    margin-top: 50px;
+}
